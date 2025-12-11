@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Student Portfolio — Naveen Balaji K</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="logo" href="#">Naveen Balaji K</a>
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a class="resume-btn" href="NAVEEN BALAJI K RESUME.pdf" download>Resume</a>
+      </nav>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Hi, I'm Naveen Balaji K</h1>
+        <p class="lead">Computer Science student focused on web apps, systems programming, and data-driven projects.</p>
+        <p>
+          <a class="primary-cta" href="#projects">View Projects</a>
+          <a class="secondary-cta" href="#contact">Contact Me</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>About</h2>
+      <p>I'm a Computer Science student building user-centered web applications and tools. I enjoy full-stack development, algorithmic problem solving, and learning new technologies through hands-on projects.</p>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h2>Selected Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Personal Website</h3>
+          <p>Responsive portfolio site built with HTML, CSS and vanilla JS. Focus on accessibility and simple content management.</p>
+          <p><a href="#">View</a></p>
+        </article>
+        <article class="card">
+          <h3>Task Manager App</h3>
+          <p>Full-stack app using Node.js and SQLite for tracking tasks with user auth and REST API.</p>
+          <p><a href="#">Repository</a></p>
+        </article>
+        <article class="card">
+          <h3>Algorithm Visualizer</h3>
+          <p>Interactive visualizations of common algorithms implemented with TypeScript and Canvas.</p>
+          <p><a href="#">Demo</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="container skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>JavaScript / TypeScript</li>
+        <li>Python</li>
+        <li>React / Web</li>
+        <li>Data Structures & Algorithms</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <p>Prefer email? <a href="mailto:you@example.com">you@example.com</a></p>
+      <form id="contactForm">
+        <label>Name<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Message<textarea name="message" rows="4" required></textarea></label>
+        <button type="submit" class="primary-cta">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name — Student Portfolio</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
