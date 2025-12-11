@@ -18,6 +18,27 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Debug: show environment and files
+        if: ${{ always() }}
+        run: |
+          echo "Runner: $RUNNER_OS"
+          echo "Repository: $GITHUB_REPOSITORY"
+          echo "Ref: $GITHUB_REF"
+          echo "SHA: $GITHUB_SHA"
+          echo "Actor: $GITHUB_ACTOR"
+          echo "Run ID: $GITHUB_RUN_ID"
+          echo "Workspace: $RUNNER_WORKSPACE"
+          echo "-- ls -la --"
+          ls -la
+          echo "-- disk usage --"
+          du -sh . || true
+          echo "-- env (selected) --"
+          echo "GITHUB_REPOSITORY=$GITHUB_REPOSITORY"
+          echo "GITHUB_REF=$GITHUB_REF"
+          echo "GITHUB_SHA=$GITHUB_SHA"
+          echo "RUNNER_OS=$RUNNER_OS"
+          echo "RUNNER_WORKSPACE=$RUNNER_WORKSPACE"
+
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v1
         with:
