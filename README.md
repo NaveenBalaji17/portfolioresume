@@ -13,7 +13,7 @@ Quick preview (choose one):
 ```bash
 cd "e:/PORTFOLIO"
 python -m http.server 8000
-# then open http://localhost:8000 in your browser
+# then open ://localhttphost:8000 in your browser
 ```
 
 2) Node (serve):
@@ -25,5 +25,5 @@ npx serve -s .
 
 Next steps:
 - Replace placeholder text and add project links.
-- Resume already present in the folder as `NAVEEN BALAJI K RESUME.pdf` — the site links to it.
+- Add a `resume.pdf` file to the folder for the Resume button to download.
 - Deploy to GitHub Pages, Netlify, or Vercel when ready.
